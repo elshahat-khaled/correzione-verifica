@@ -15,6 +15,7 @@ export class SearchBirreComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+  
   submit(query: HTMLInputElement): void {
     if (!query.value) {
       return;

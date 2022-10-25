@@ -1,3 +1,5 @@
 <label>Type:</label>
 <input #query>
-<button>Search</button>
+<button (click)="submit(query)">Search</button>
+
+{{results|json}}
