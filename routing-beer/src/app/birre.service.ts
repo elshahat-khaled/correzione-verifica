@@ -13,4 +13,10 @@ export class BirreService {
     let obsProd = this.http.get(url);
     return obsProd;
   }
+
+  searchDet(query: any) {
+    const url = `https://api.punkapi.com/v2/beers/${query}`;
+    let obsDet = this.http.get(url);
+    return obsDet;
+    }
 }
