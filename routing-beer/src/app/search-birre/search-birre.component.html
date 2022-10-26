@@ -2,4 +2,12 @@
 <input #query>
 <button (click)="submit(query)">Search</button>
 
-{{results|json}}
+<div *ngIf="results">
+    <div *ngFor="let t of results">
+        <a [routerLink]="['/item-birre',t.id]"><p>{{t.id}}</p></a>
+        
+        <p>{{t.name}}</p>
+      
+        <hr>
+    </div>
+</div>
